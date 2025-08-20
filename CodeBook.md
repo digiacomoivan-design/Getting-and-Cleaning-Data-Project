@@ -39,7 +39,7 @@ The tidy dataset contains the average of selected measurements for each subject 
   - `FrequencyBodyGyroscopeMeanX`  
   - `FrequencyBodyGyroscopeStandardDeviationY`  
 
-## Data cleaning steps
+## Data cleaning and transformations steps
 The following transformations were applied in `run_analysis.R`:
 
 1. Merged training and test datasets into a single dataset.  
@@ -57,3 +57,29 @@ The following transformations were applied in `run_analysis.R`:
    - `Freq()` → `Frequency`  
 5. Created a tidy dataset with the **average of each variable for each subject and activity**.  
 6. Ordered the dataset by subject and activity.
+
+## Units
+
+- **Accelerometer**: approximately in *g* (gravitational units), normalized.  
+- **Gyroscope**: radians/second, normalized.  
+- **Magnitudes and FFT-derived features**: dimensionless (unitless).  
+
+## Source of the data
+The original dataset is **Human Activity Recognition Using Smartphones**, available here:  
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
+
+It contains measurements collected from the accelerometer and gyroscope of a Samsung Galaxy S smartphone.  
+Data was gathered from **30 subjects**, each performing **6 activities**.
+
+---
+
+## Final dataset: `tidy_data.txt`
+
+- **Rows**: 180 (30 subjects × 6 activities)  
+- **Columns**: 68  
+  - 1 column for `subject`  
+  - 1 column for `activity`  
+  - 66 columns with the **average** of selected sensor signals  
+
+
+
