@@ -1,5 +1,8 @@
 # Getting-and-Cleaning-Data-Project
 
+## Github link
+https://github.com/digiacomoivan-design/Getting-and-Cleaning-Data-Project
+
 ## About this project
 This project is part of the "Getting and Cleaning Data" course (Coursera, Johns Hopkins University).  
 It is one of the course assignments designed to practice downloading, cleaning, and preparing data.
